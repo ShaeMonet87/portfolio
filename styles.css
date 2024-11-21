@@ -12,6 +12,37 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Center and style all headers */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+/* Underline all h3 titles */
+h3 {
+    text-decoration: underline;
+}
+
+/* Center video and audio embeds */
+iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+/* Add spacing and alignment to archive sections */
+#audio-archive, #video-archive {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style subheaders in archives */
+#audio-archive h3, #video-archive h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 /* Header */
 header {
     background: #333;
