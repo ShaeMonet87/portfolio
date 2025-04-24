@@ -21,7 +21,7 @@ Check out the live version of the site here: [My Portfolio](https://shaemonet87.
 ├── index.html       # Main HTML file for the website
 ├── styles.css       # CSS file for styling
 └── README.md        # Documentation for the project
----
+
 
 ### **Key Fixes**
 1. **Formatting Improvements**:
@@ -34,13 +34,4 @@ Check out the live version of the site here: [My Portfolio](https://shaemonet87.
 3. **Contact Section**:
    - Included placeholders for links to Mixcloud and GitHub.
 
----
 
-### **Next Steps**
-1. Copy the updated content into your `README.md` file.
-2. Save the changes.
-3. Push the updated `README.md` to your repository:
-   ```bash
-   git add README.md
-   git commit -m "Updated README with refined formatting and additional sections"
-   git push origin main
