@@ -12,6 +12,13 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Layout container */
+main {
+    max-width: 1100px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
 /* Center and style all headers */
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
@@ -22,19 +29,56 @@ h3 {
     text-decoration: underline;
 }
 
-/* Center video and audio embeds */
-iframe {
+/* Responsive embed wrapper using aspect-ratio */
+.embed-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #000;
+}
+.embed-wrap iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
     display: block;
-    margin: 0 auto;
-    border-radius: 8px; /* Optional: Adds rounded corners */
 }
 
 /* Add spacing and alignment to archive sections */
 #audio-archive, #video-archive {
-    margin: 20px auto;
-    max-width: 800px;
+    margin: 20px auto 40px;
     padding: 10px;
-    text-align: center;
+}
+
+/* Media grid */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    align-items: start;
+}
+.media-card {
+    background: #fff;
+    padding: 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.media-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.05rem;
+    text-decoration: none;
+}
+
+@media (min-width: 700px) {
+    .media-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1100px) {
+    .media-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Style subheaders in archives */
@@ -45,27 +89,36 @@ iframe {
 
 /* Header */
 header {
-    background: #333;
+    background: #111318;
     color: #fff;
-    padding: 1rem 0;
-    text-align: center;
 }
-
-header nav h1 {
-    margin-bottom: 0.5rem;
+header .site-nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
 }
-
-header nav ul {
+header .nav-brand h1 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+header .nav-links {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
-
-header nav ul li a {
+header .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+}
+header .nav-links a:hover {
+    background: rgba(255,255,255,0.06);
 }
 
 /* About Section */
@@ -83,15 +136,15 @@ header nav ul li a {
 /* Projects Section */
 #projects {
     padding: 2rem;
-    background: #eee;
+    background: #f7f7f9;
 }
 
 #projects .project {
     margin: 1rem 0;
     padding: 1rem;
     background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #e6e6e9;
+    border-radius: 8px;
 }
 
 /* Contact Section */
@@ -114,6 +167,6 @@ header nav ul li a {
 footer {
     text-align: center;
     padding: 1rem;
-    background: #333;
+    background: #111318;
     color: #fff;
 }
