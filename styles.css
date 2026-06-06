@@ -290,13 +290,14 @@ header .nav-links a:hover {
 #contact {
     padding: 2rem;
     text-align: center;
-    background: #fff;
+        background: linear-gradient(180deg, #07101f 0%, #0b1522 100%);
+        color: #dceafc;
 }
 
 #contact a {
     color: #72b7ff;
     text-decoration: none;
-    font-weight: 600;
+        font-weight: 700;
 }
 
 #contact a:hover {
