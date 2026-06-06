@@ -268,3 +268,30 @@ footer {
     background: #111318;
     color: #fff;
 }
+
+/* Footer socials strip */
+.footer-socials {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    background: rgba(255,255,255,0.02);
+    border-top: 1px solid rgba(255,255,255,0.03);
+    flex-wrap: wrap;
+}
+.footer-social {
+    color: #fff;
+    text-decoration: none;
+    background: rgba(255,255,255,0.03);
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
+    font-weight: 600;
+    display: inline-block;
+}
+.footer-social:hover { background: rgba(255,255,255,0.06); }
+
+@media (max-width: 700px) {
+    .footer-socials { gap: 0.4rem; padding: 0.5rem; }
+    .footer-social { font-size: 0.95rem; padding: 0.4rem 0.7rem; }
+}
