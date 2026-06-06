@@ -218,6 +218,33 @@ header .nav-links a:hover {
     border-radius: 8px;
 }
 
+/* Social links grid for homepage */
+.socials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    max-width: 900px;
+    margin: 0.75rem auto 0;
+}
+.social {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.8rem 1rem;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    text-decoration: none;
+    color: inherit;
+}
+.social-icon { font-size: 28px; width: 48px; text-align: center; }
+.social-info strong { display: block; }
+.social-sub { color: #666; font-size: 0.95rem; margin-top: 2px; }
+
+@media (min-width: 800px) {
+    .socials-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
 /* Contact Section */
 #contact {
     padding: 2rem;
