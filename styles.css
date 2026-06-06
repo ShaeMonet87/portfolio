@@ -19,6 +19,36 @@ main {
     padding: 0 1rem;
 }
 
+/* Hero */
+.hero {
+    background: linear-gradient(180deg, #0f1720 0%, #111318 60%);
+    color: #fff;
+    padding: 2.5rem 1rem;
+}
+.hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.hero h2 { font-size: 2rem; margin-bottom: 0.5rem; }
+.hero .lead { opacity: 0.9; margin-bottom: 1rem; }
+.hero-ctas { display:flex; gap:0.75rem; justify-content:center; }
+
+/* Buttons */
+.btn { display:inline-block; padding:0.5rem 0.9rem; background:#fff; color:#111; border-radius:6px; text-decoration:none; font-weight:600; }
+.btn.primary { background:#ff6b6b; color:#fff; }
+.btn:hover { opacity:0.95; }
+
+/* Projects grid */
+.projects-grid { display:grid; grid-template-columns:1fr; gap:1rem; margin-top:1rem; }
+.project { background:#fff; padding:0.75rem; border-radius:8px; text-align:left; }
+.project-image { width:100%; height:auto; border-radius:6px; display:block; margin-bottom:0.6rem; }
+.project h3 { margin:0 0 0.4rem 0; }
+
+@media(min-width:800px){
+    .projects-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
 /* Center and style all headers */
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
