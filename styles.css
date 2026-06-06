@@ -41,12 +41,28 @@ main {
 
 /* Projects grid */
 .projects-grid { display:grid; grid-template-columns:1fr; gap:1rem; margin-top:1rem; }
-.project { background:#fff; padding:0.75rem; border-radius:8px; text-align:left; }
-.project-image { width:100%; height:auto; border-radius:6px; display:block; margin-bottom:0.6rem; }
-.project h3 { margin:0 0 0.4rem 0; }
+.project {
+    position:relative;
+    display:block;
+    overflow:hidden;
+    border-radius:8px;
+    height:200px;
+}
+.project-image { width:100%; height:100%; object-fit:cover; display:block; }
+.project .overlay {
+    position:absolute;
+    left:0; right:0; bottom:0;
+    padding:0.8rem 1rem;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+    color:#fff;
+    font-size:1.1rem;
+}
+.project:hover { transform:translateY(-4px); box-shadow:0 8px 24px rgba(0,0,0,0.12); }
+.project { transition: transform 180ms ease, box-shadow 180ms ease; }
 
 @media(min-width:800px){
     .projects-grid { grid-template-columns: repeat(3, 1fr); }
+    .project { height:260px; }
 }
 
 /* Center and style all headers */
