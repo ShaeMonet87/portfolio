@@ -1,8 +1,8 @@
-# Portfolio Website
+# Retro Radio Website
 
-This repository contains the static files for my personal portfolio and media archive.
+This repository contains the static files for the Retro Radio media archive and site.
 
-Live site: https://shaemonet87.github.io/portfolio/
+Live site: https://shaemonet87.github.io/retro-radio/
 
 ## What’s in this repo
 - `index.html` — homepage
