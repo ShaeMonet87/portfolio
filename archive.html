@@ -228,7 +228,7 @@
       iframe.closest('.embed-wrap').after(link);
 
       if (window.matchMedia('(max-width: 700px)').matches) {
-        iframe.src = 'about:blank';
+        iframe.loading = 'eager';
       }
     });
   </script>

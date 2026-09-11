@@ -174,15 +174,6 @@ main > .section-intro {
 }
 .mixcloud-fallback:hover { text-decoration: underline; }
 
-@media (max-width: 700px) {
-    .embed-wrap iframe[src="about:blank"] { display: none; }
-    .mixcloud-fallback {
-        margin-top: 0;
-        padding: 0.65rem 0;
-        font-size: 0.85rem;
-    }
-}
-
 /* Add spacing and alignment to archive sections */
 #audio-archive, #video-archive {
     margin: 20px auto 40px;
