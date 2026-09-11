@@ -219,7 +219,11 @@
 
       iframe.title = iframe.title || 'Mixcloud audio player';
       iframe.setAttribute('allowfullscreen', '');
-      if (index > 1) iframe.setAttribute('loading', 'lazy');
+      if (window.matchMedia('(max-width: 700px)').matches) {
+        iframe.loading = 'eager';
+      } else if (index > 1) {
+        iframe.setAttribute('loading', 'lazy');
+      }
 
       const link = document.createElement('a');
       link.className = 'mixcloud-fallback';
