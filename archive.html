@@ -224,8 +224,6 @@
       const link = document.createElement('a');
       link.className = 'mixcloud-fallback';
       link.href = `https://www.mixcloud.com${feed}`;
-      link.target = '_blank';
-      link.rel = 'noopener';
       link.textContent = 'Open this mix on Mixcloud';
       iframe.closest('.embed-wrap').after(link);
 
