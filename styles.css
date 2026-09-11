@@ -33,15 +33,15 @@ main {
 .hero h2 { font-size: 2rem; margin-bottom: 0.65rem; }
 .hero .lead {
     opacity: 0.92;
-    margin: 0.95rem auto 0;
+    margin: 1.1rem auto 0;
     max-width: 36rem;
     color: #b8c4d9;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 .hero-ctas { display:flex; gap:0.85rem; justify-content:center; margin-top:1.25rem; }
 
 /* Featured thumbnail in hero */
-.hero-feature { display:block; max-width:320px; width:min(100%,320px); margin:1.75rem auto 0; position:relative; border-radius:10px; overflow:hidden; border:0; box-shadow: 0 16px 40px rgba(0,0,0,0.18); }
+.hero-feature { display:block; max-width:580px; width:min(100%,580px); margin:0 auto; position:relative; border-radius:10px; overflow:hidden; border:0; box-shadow: 0 16px 40px rgba(0,0,0,0.18); }
 .hero-feature img { display:block; width:100%; height:auto; object-fit:cover; }
 .hero-feature .overlay { position:absolute; left:0; right:0; bottom:0; padding:0.8rem 1rem; background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%); color:#fff; font-size:0.95rem; text-align:left; }
 
