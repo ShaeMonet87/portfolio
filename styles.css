@@ -251,6 +251,9 @@ header .nav-links a {
     background: rgba(255,255,255,0.03);
     transition: background 160ms ease, transform 160ms ease;
     font-weight: 600;
+    font-family: inherit;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
 }
 header .nav-links a:hover {
     background: rgba(255,255,255,0.08);
