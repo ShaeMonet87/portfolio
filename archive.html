@@ -215,6 +215,27 @@
     </section>
   </main>
 
+  <script>
+    document.querySelectorAll('.media-card iframe[src*="mixcloud.com"]').forEach((iframe) => {
+      const widgetUrl = new URL(iframe.src);
+      const feed = widgetUrl.searchParams.get('feed');
+
+      if (!feed) return;
+
+      iframe.title = iframe.title || 'Mixcloud audio player';
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.setAttribute('loading', 'lazy');
+
+      const link = document.createElement('a');
+      link.className = 'mixcloud-fallback';
+      link.href = `https://www.mixcloud.com${feed}`;
+      link.target = '_blank';
+      link.rel = 'noopener';
+      link.textContent = 'Open this mix on Mixcloud';
+      iframe.closest('.embed-wrap').after(link);
+    });
+  </script>
+
   <footer>
     <p>&copy; 2024 Retro Radio</p>
   </footer>

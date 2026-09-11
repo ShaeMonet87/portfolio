@@ -137,6 +137,15 @@ h1, h2, h3, h4, h5, h6 {
     border: 0;
     display: block;
 }
+.mixcloud-fallback {
+    display: block;
+    margin-top: 0.65rem;
+    color: #72b7ff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.mixcloud-fallback:hover { text-decoration: underline; }
 
 /* Add spacing and alignment to archive sections */
 #audio-archive, #video-archive {
