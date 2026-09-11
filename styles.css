@@ -258,6 +258,7 @@ header .nav-links a {
     transition: background 160ms ease, transform 160ms ease;
     font-weight: 600;
     font-family: inherit;
+    font-size: 0.86rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
 }
@@ -270,7 +271,7 @@ header .nav-links a:hover {
     header .site-nav { padding: 0.65rem 0.85rem; }
     header .nav-brand h1 { font-size: 1.05rem; }
     header .nav-links { gap: 0.5rem; flex-wrap: wrap; }
-    header .nav-links a { padding: 0.45rem 0.6rem; font-size: 0.95rem; }
+    header .nav-links a { padding: 0.45rem 0.6rem; font-size: 0.78rem; }
 }
 /* About Section */
 #about {
