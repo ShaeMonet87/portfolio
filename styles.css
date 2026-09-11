@@ -123,6 +123,18 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.7;
 }
 
+.archive-cover-title {
+    max-width: 580px;
+    margin: 0 auto;
+}
+.archive-cover-title img {
+    display: block;
+    width: min(100%, 580px);
+    height: auto;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
 /* Responsive embed wrapper using aspect-ratio */
 .embed-wrap {
     width: 100%;
