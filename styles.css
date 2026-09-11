@@ -166,9 +166,9 @@ main > .section-intro {
 }
 .mixcloud-fallback {
     display: block;
-    margin-top: 0.65rem;
+    margin-top: 0.35rem;
     color: #72b7ff;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 600;
     text-decoration: none;
 }
