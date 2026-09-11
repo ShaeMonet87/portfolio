@@ -116,6 +116,12 @@ h1, h2, h3, h4, h5, h6 {
 #video-archive h2 {
     text-decoration: underline;
     margin-bottom: 0.75rem;
+    font-family: inherit;
+    font-size: 0.86rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 .section-intro {
