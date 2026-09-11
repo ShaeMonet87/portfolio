@@ -13,7 +13,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://img.youtube.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="https://img.youtube.com/vi/ZMOdEfXVsxQ/hqdefault.jpg?v=9" imagesrcset="https://img.youtube.com/vi/ZMOdEfXVsxQ/mqdefault.jpg?v=9 320w, https://img.youtube.com/vi/ZMOdEfXVsxQ/hqdefault.jpg?v=9 480w" imagesizes="(max-width: 320px) 100vw, 320px">
+    <link rel="icon" href="data:,">
     <title>Retro Radio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,16 +24,22 @@
     <header>
         <nav class="site-nav">
             <div class="nav-brand"><h1>Retro Radio</h1></div>
-            <!-- nav links intentionally removed for a minimal header -->
+            <ul class="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="archive.html">Archive</a></li>
+                <li><a class="nav-live" href="https://www.mixcloud.com/retro45spin/" target="_blank" rel="noopener"><span class="live-dot"></span>Listen live</a></li>
+            </ul>
         </nav>
     </header>
 
     <section class="hero hero-minimal">
         <div class="hero-inner">
-            <h1 class="hero-title">Retro Radio</h1>
+            <p class="eyebrow"><span class="live-dot"></span> Broadcasting in stereo</p>
+            <h1 class="hero-title">The soundtrack<br><em>to your rewind.</em></h1>
             <p class="lead">Vinyl-only DJ sessions, archive mixes, and vintage video.</p>
             <div class="hero-ctas">
-                <a class="btn primary" href="archive.html">Listen & Watch</a>
+                <a class="btn primary" href="archive.html">Explore the archive <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://www.mixcloud.com/retro45spin/" target="_blank" rel="noopener">Open Mixcloud <span aria-hidden="true">↗</span></a>
             </div>
 
             <a class="hero-feature" href="archive.html">
@@ -40,13 +49,28 @@
                      width="320"
                      height="180"
                      alt="Featured session"
-                     loading="lazy">
-                <div class="overlay"><strong>Featured: Vinyl Session</strong></div>
+                     loading="eager"
+                     fetchpriority="high">
+                <div class="overlay"><span>Featured session</span><strong>Sunday Soul Sounds</strong><span class="play-mark">Play mix&nbsp; ↗</span></div>
             </a>
         </div>
     </section>
 
-    <!-- contact moved to footer; homepage kept minimal -->
+    <section class="signal-strip" aria-label="Station information">
+        <div><span class="signal-label">Now spinning</span><strong>45s, soul cuts & deep grooves</strong></div>
+        <div><span class="signal-label">The collection</span><strong>All-vinyl sessions since 2024</strong></div>
+        <div><span class="signal-label">Tune in</span><strong>New mixes on Mixcloud</strong></div>
+    </section>
+
+    <section class="home-intro">
+        <p class="eyebrow">Choose your frequency</p>
+        <h2>Press play on the good stuff.</h2>
+        <p>From Sunday soul to tearjerker classics, find a session and settle in. Every set is recorded from the turntable, one record at a time.</p>
+        <div class="home-links">
+            <a class="home-link" href="archive.html#audio-archive"><span class="home-link-number">01</span><span><strong>Audio sessions</strong><small>Long-form vinyl mixes</small></span><span aria-hidden="true">↗</span></a>
+            <a class="home-link" href="archive.html#video-archive"><span class="home-link-number">02</span><span><strong>Video recordings</strong><small>Watch the highlights</small></span><span aria-hidden="true">↗</span></a>
+        </div>
+    </section>
 
     <section id="contact">
         <h2>Contact</h2>
@@ -55,8 +79,8 @@
 
     <footer>
         <div class="footer-socials">
-            <a class="footer-social" href="https://www.mixcloud.com/retro45spin/" target="_blank" rel="noopener">🎧 Mixcloud — Live streams & mixes</a>
-            <a class="footer-social" href="https://www.youtube.com/@retro45spin" target="_blank" rel="noopener">🎬 YouTube — Videos & highlights</a>
+            <a class="footer-social" href="https://www.mixcloud.com/retro45spin/" target="_blank" rel="noopener">Mixcloud <span>Live streams & mixes&nbsp; ↗</span></a>
+            <a class="footer-social" href="https://www.youtube.com/@retro45spin" target="_blank" rel="noopener">YouTube <span>Videos & highlights&nbsp; ↗</span></a>
         </div>
         <p>&copy; 2024 Retro Radio. All rights reserved.</p>
     </footer>
